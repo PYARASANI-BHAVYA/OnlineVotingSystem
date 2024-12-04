@@ -1,0 +1,167 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Welcome page styling */
+.welcome-page {
+    text-align: center;
+}
+
+.welcome-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-page .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.welcome-page .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Form styling for login, register */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Login Page */
+.login-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Register Page */
+.register-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Vote page */
+.vote-page select {
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.vote-page input[type="submit"] {
+    margin-top: 10px;
+}
+
+/* Admin page styling */
+.admin-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.admin-page table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.admin-page th, .admin-page td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-page th {
+    background-color: #3498db;
+    color: white;
+}
+
+.admin-page td {
+    background-color: #f9f9f9;
+}
+
+.admin-page tr:hover td {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .welcome-page h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .vote-page input[type="submit"] {
+        width: 100%;
+    }
+}

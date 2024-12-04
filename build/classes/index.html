@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Online Voting System</title>
+    <style>
+        /* Resetting some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling for overall page layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+            background-image: url('/OnlineVotingSystem/src/main/webapp/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Main container with content */
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Styling for header section */
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 20px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for the image */
+        .welcome-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons styling */
+        .btn {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover effect for buttons */
+        .btn:hover {
+            background-color: #3498db;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+            header h2 {
+                font-size: 18px;
+            }
+            .btn {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Online Voting System</h1>
+            <h2>Choose an option to proceed</h2>
+            <img src="images/j.jpg" alt="Welcome Image" class="welcome-img">
+        </header>
+        
+        <div>
+            <a href="login.html" class="btn">Login</a>
+            <a href="register.html" class="btn">Register</a>
+            <a href="admin.html" class="btn">Admin Login</a>
+        </div>
+    </div>
+</body>
+</html>
